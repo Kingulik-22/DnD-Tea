@@ -1,20 +1,32 @@
-body{
-    background-color: rgb(179, 147, 105);
-}
+:root{
+    --back_color1: #b39369;
+    --background_color1: burlywood;
+    --main_color1: cornsilk;
+    
+    body{
+    background-color: var(--back_color1);
+    }
 
-.pp{
+.p_view{
     margin: 0;
     font-family: sans-serif;
+    text-align: center;
+    }
+.p_size{
     font-size: 20px;
+    }
 }
+
 
 .main{
     display: flex;
     justify-content: center;
+
+    margin-bottom: 15px;
 }
 
 .main__page{
-    background-color: burlywood;
+    background-color: var(--background_color1);
 
     width: 70%;
 
@@ -38,16 +50,17 @@ body{
 }
 
 .main__link_container{
-    background-color: cornsilk;
+    background-color: var(--main_color1);
     color:  black;
     
     /* width: 200%; */
     
     border-radius: 20px;
+    border: 3px dashed orange;
 
     padding: 10px;
 
-    text-align: center;
+    /* text-align: center; */
 }
 
 .main__link_text{
