@@ -1,4 +1,4 @@
-.content{
+    .content{
     display: flex;
     justify-content: center;
 }
@@ -50,6 +50,23 @@
     align-items:center;
     gap: 5px;
 
+/*    margin-bottom:20px;*/
+}
+
+.content__input_punct_one{
+    background-color: var(--background_color1);
+    padding: 5px;
+
+    width: 30%;
+    min-width: 200px;
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+    /* display: flex; */
+
+    box-sizing: border-box;
 /*    margin-bottom:20px;*/
 }
 
