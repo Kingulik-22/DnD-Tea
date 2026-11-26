@@ -252,15 +252,20 @@
                 </div>
                 <div class="content__input_punct">
                     <div class="content__input_punct_one">
-                        <p class="p_view p_size">Очки - 0/27</p>
+                        <p class="p_view p_size" id="points">Очки - 27/27</p>
                     </div>
                     <div class="content__input_punct_one">
                         <div style="display: flex; gap: 10px; justify-content: space-between;">
-                            <p class="p_view p_size">Сила: 8</p>
+                            <p class="p_view p_size" id="str_punct">Сила: 8</p>
                             <div>
-                                <button>+</button>
-                                <button>-</button>
+                                <button id="str_pls">+</button>
+                                <button id="str_dis">-</button>
                             </div>
+                        </div>
+
+                        <div style="display: flex; gap: 5px; justify-content: end;">
+                            <p class="p_view p_size">Спасбросок -</p>
+                            <input type="checkbox">
                         </div>
                         <!-- <div style="display: flex; gap: 10px;">
                             <button>+</button>
@@ -269,57 +274,87 @@
                     </div>
                     <div class="content__input_punct_one">
                         <div style="display: flex; gap: 10px; justify-content: space-between;">
-                            <p class="p_view p_size">Ловкость: 8</p>
+                            <p class="p_view p_size" id="dex_punct">Ловкость: 8</p>
                             <div>
-                                <button>+</button>
-                                <button>-</button>
+                                <button id="dex_pls">+</button>
+                                <button id="dex_dis">-</button>
                             </div>
+                        </div>
+                        
+                        <div style="display: flex; gap: 5px; justify-content: end;">
+                            <p class="p_view p_size">Спасбросок -</p>
+                            <input type="checkbox">
                         </div>
                         <!-- <p class="p_view p_size">Ловкость</p> -->
                     </div>
                     <div class="content__input_punct_one">
                         <div style="display: flex; gap: 10px; justify-content: space-between;">
-                            <p class="p_view p_size">Телослож.: 8</p>
+                            <p class="p_view p_size" id="con_punct">Телослож.: 8</p>
                             <div>
-                                <button>+</button>
-                                <button>-</button>
+                                <button id="con_pls">+</button>
+                                <button id="con_dis">-</button>
                             </div>
+                        </div>
+
+                        <div style="display: flex; gap: 5px; justify-content: end;">
+                            <p class="p_view p_size">Спасбросок -</p>
+                            <input type="checkbox">
                         </div>
                         <!-- <p class="p_view p_size">Телосложение</p> -->
                     </div>
                     <div class="content__input_punct_one">
-                        <div style="display: flex; gap: 10px;">
-                            <p class="p_view p_size">8</p>
-                            <button>+</button>
-                            <button>-</button>
+                        <div style="display: flex; gap: 10px; justify-content: space-between;">
+                            <p class="p_view p_size" id="int_punct">Интелект: 8</p>
+                            <div>
+                                <button id="int_pls">+</button>
+                                <button id="int_dis">-</button>
+                            </div>
                         </div>
-                        <p class="p_view p_size">Интелект</p>
-                    </div>
-                    <div class="content__input_punct_one">
-                        <div style="display: flex; gap: 10px;">
-                            <p class="p_view p_size">8</p>
-                            <button>+</button>
-                            <button>-</button>
-                        </div>
-                        <p class="p_view p_size">Мудрость</p>
-                    </div>
-                    <div class="content__input_punct_one">
-                        <div style="display: flex; gap: 10px;">
-                            <p class="p_view p_size">8</p>
-                            <div style="width: 50%;"></div>
-                            <button>+</button>
-                            <button>-</button>
-                        </div>  
-                        <p class="p_view p_size">Харизма</p>
-                        <div style="display: flex; gap: 10px;">
+
+                        <div style="display: flex; gap: 5px; justify-content: end;">
+                            <p class="p_view p_size">Спасбросок -</p>
                             <input type="checkbox">
-                            <p class="p_view p_size">- Спасбросок</p>
                         </div>
+                        <!-- <p class="p_view p_size">Интелект</p> -->
+                    </div>
+                    <div class="content__input_punct_one">
+                        <div style="display: flex; gap: 10px; justify-content: space-between;">
+                            <p class="p_view p_size" id="wis_punct">Мудрость: 8</p>
+                            <div>
+                                <button id="wis_pls">+</button>
+                                <button id="wis_dis">-</button>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 5px; justify-content: end;">
+                            <p class="p_view p_size">Спасбросок -</p>
+                            <input type="checkbox">
+                        </div>
+                        <!-- <p class="p_view p_size">Мудрость</p> -->
+                    </div>
+                    <div class="content__input_punct_one">
+                        <div style="display: flex; gap: 10px; justify-content: space-between;">
+                            <p class="p_view p_size" id="cha_punct">Харизма: 8</p>
+                            <!-- <div style="width: 50%;"></div> -->
+                            <div>
+                                <button id="cha_pls">+</button>
+                                <button id="cha_dis">-</button>
+                            </div>
+                        </div>  
+                        <!-- <p class="p_view p_size">Харизма</p> -->
+
+                        <div style="display: flex; gap: 5px; justify-content: end;">
+                            <p class="p_view p_size">Спасбросок -</p>
+                            <input type="checkbox">
+                        </div>
+
                     </div>
                     <div class="end_line"></div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="src/js/construct.js"></script>
 </body>
 </html>

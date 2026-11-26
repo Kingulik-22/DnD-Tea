@@ -54,11 +54,11 @@
 }
 
 .content__input_punct_one{
-    background-color: var(--background_color1);
+    background-color: var(--h_background_color1);
     padding: 5px;
 
-    width: 30%;
-    min-width: 200px;
+    width: 200px;
+    /* min-width: 200px; */
 
     padding: 10px;
 

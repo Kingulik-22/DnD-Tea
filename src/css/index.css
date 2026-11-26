@@ -1,10 +1,14 @@
 :root{
     --back_color1: #b39369;
     --background_color1: burlywood;
+    --h_background_color1: #f0c791;
     --main_color1: cornsilk;
     
     body{
     background-color: var(--back_color1);
+    min-width: 500px;
+    /* border: 0; */
+    margin: 0;
     }
 
 .p_view{
